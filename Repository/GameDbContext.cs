@@ -14,6 +14,7 @@ namespace MyMicroservice.Repository
         {
             //optionsBuilder.UseSqlServer(@"Data Source=(LAPTOP-BCM7FP7D\SQLEXPRESS01;trusted_connection=true;Database=Catalog;App=EntityFramework");
             optionsBuilder.UseSqlServer(@"Server=LAPTOP-BCM7FP7D\SQLEXPRESS01;Database=Catalog;Trusted_Connection=True;");
+            // Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword (si quieremos conectarnos con usuario y pass a un server remoto)
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
