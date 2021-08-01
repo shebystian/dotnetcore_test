@@ -16,7 +16,7 @@ namespace MyMicroservice.Controllers
         [HttpGet("{name}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Game))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult GetGame(String name)
+        public IActionResult Get(String name)
         {
             
             try
@@ -39,7 +39,7 @@ namespace MyMicroservice.Controllers
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Game))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult insertGame(Game article)
+        public IActionResult Post([FromBody] Game article)
         {
             try
             {
