@@ -6655,11 +6655,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\sebastian\\Desktop\\dotnetCore\\dotnetcore_test\\MyMicroservice.csproj",
+      "projectUniqueName": "C:\\Users\\sebastian\\Desktop\\dotnetCore\\dotnetcore_test\\MyMicroservice.csproj",
       "projectName": "MyMicroservice",
-      "projectPath": "c:\\Users\\sebastian\\Desktop\\dotnetCore\\dotnetcore_test\\MyMicroservice.csproj",
+      "projectPath": "C:\\Users\\sebastian\\Desktop\\dotnetCore\\dotnetcore_test\\MyMicroservice.csproj",
       "packagesPath": "C:\\Users\\sebastian\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\sebastian\\Desktop\\dotnetCore\\dotnetcore_test\\obj\\",
+      "outputPath": "C:\\Users\\sebastian\\Desktop\\dotnetCore\\dotnetcore_test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sebastian\\AppData\\Roaming\\NuGet\\NuGet.Config",
