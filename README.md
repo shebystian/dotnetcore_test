@@ -29,3 +29,10 @@ sqlcmd -S localhost -U SA -P '<password>'
 
 query example in sqlcmd:
 select * from Catalog.dbo.Game where nombre = 'Doom'
+
+
+# para generar contenedor
+ docker build -t dotnetappgames .
+
+# ejecutar contenedor expuesto en puerto 8080
+docker run -it -p 8080:80 dotnetappgames:latest
