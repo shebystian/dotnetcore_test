@@ -15,6 +15,18 @@ dotnet build
 to exec:
 dotnet run
 
+# para mssqlserver en linux si falla comando sqlcmd (despues de instalarlo)
+# verificamos 
+sudo ls /opt/mssql-tools/bin/sqlcmd
+# aplicamos
+sudo ln -sfn /opt/mssql-tools/bin/sqlcmd /usr/bin/sqlcmd
+
+
+
+
+# para entity framework
+dotnet tool install --global dotnet-ef 
+
 for changes in databases (exporta los cambios de la bd a nuestro modelo)
 dotnet ef dbcontext scaffold "Server={INSTANCENAME};Database={DBNAME};Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models
 
