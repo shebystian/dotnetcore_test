@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Data.Common;
 using System.Linq;
 using MyMicroservice.Models;
@@ -38,6 +39,23 @@ namespace MyMicroservice.Repository
                     context.SaveChanges();
                     return true;
                 }
+            }
+            catch(DbException ex){
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public List<Game> GetGames()
+        {
+            try
+            {
+                List<Game> game = new List<Game>();
+
+                using (var context = new CatalogContext()) 
+                {
+                    game = context.Games.ToList();
+                }
+                return game.ToList();
             }
             catch(DbException ex){
                 throw new Exception(ex.Message);

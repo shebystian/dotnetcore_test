@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using MyMicroservice.Models;
 
 namespace MyMicroservice.Services
@@ -22,6 +23,13 @@ namespace MyMicroservice.Services
             catch(Exception ex){
                 throw new Exception(ex.Message);
             }
+        }
+
+        public List<Game> GetGames()
+        {
+            Repository.GameDao gameDAO = new Repository.GameDao();
+            List<Game> result = gameDAO.GetGames();
+            return result;
         }
     }
 }
