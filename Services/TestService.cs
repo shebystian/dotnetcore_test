@@ -4,7 +4,7 @@ namespace MyMicroservice.Services
     {
         public string getHello()
         {
-            return "servicio get hello ok.";
+            return "Hello this is a Test. service is alive!";
         } 
     }
 }

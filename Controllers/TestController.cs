@@ -18,7 +18,8 @@ namespace MyMicroservice.Controllers
         [HttpGet]
         public string getHello()
         {
-            return "Hello this is a Test controller.";
+            Services.TestServices service = new Services.TestServices();
+            return service.getHello();
         }
     }
 }
