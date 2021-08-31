@@ -25,7 +25,7 @@ namespace MyMicroservice.Models
             {
                 //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 //optionsBuilder.UseSqlServer("Server=LAPTOP-BCM7FP7D\\SQLEXPRESS01;Database=Catalog;Trusted_Connection=True;"); //WINDOWS
-                optionsBuilder.UseSqlServer("Server=localhost;Database=Catalog;User Id=SA;Password=agustin2015.;Trusted_Connection=False;"); //LINUX
+                optionsBuilder.UseSqlServer("Server=localhost;Database=Catalog;User Id=SA;Password=xxxxxxx;Trusted_Connection=False;"); //LINUX
             }
         }
 
